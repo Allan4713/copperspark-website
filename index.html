@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopperSpark Craft - Premium Copper Artifacts & Crafts</title>
+    <meta name="description" content="CopperSpark Craft specializes in lost-wax casting copper crafts with 12+ years of experience. 1200+ products, OEM/ODM available. Certified supplier of CCTV Cultural Creative.">
+    <meta name="keywords" content="copper crafts, bronze artifacts, copper figurines, copper sculptures, Chinese crafts, OEM copper manufacturer">
+    <meta name="author" content="CopperSpark Craft">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="CopperSpark Craft - Premium Copper Artifacts">
+    <meta property="og:description" content="12+ years in copper crafts manufacturing. 1200+ products. Global shipping available.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Schema.org Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CopperSpark Craft (Tongjin Years)",
+        "alternateName": "深圳市铜金岁月文化创意有限公司",
+        "url": "https://coppersparkcraft.com",
+        "logo": "https://coppersparkcraft.com/logo.png",
+        "description": "Professional copper crafts manufacturer specializing in lost-wax casting since 2010. 1200+ products including Buddha statues, zodiac animals, feng shui items, and custom OEM orders.",
+        "foundingDate": "2010",
+        "foundingLocation": "Shenzhen, China",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "3e1, Building 2, Baiman Front Industrial Park, 215 Basha Road, Nanlong Community, Nanwan Street, Longgang District",
+            "addressLocality": "Shenzhen",
+            "addressRegion": "Guangdong",
+            "postalCode": "518114",
+            "addressCountry": "CN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+86-15001191313",
+            "email": "woshizwl@126.com",
+            "contactType": "sales"
+        },
+        "sameAs": [
+            "https://www.tiktok.com/@copperspark",
+            "https://www.xiaohongshu.com/@copperspark"
+        ]
+    }
+    </script>
+    
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "CopperSpark Craft",
+        "image": "https://coppersparkcraft.com/hero.jpg",
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "3e1, Building 2, Baiman Front Industrial Park, 215 Basha Road",
+            "addressLocality": "Shenzhen",
+            "addressRegion": "Guangdong",
+            "postalCode": "518114",
+            "addressCountry": "CN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "22.7200",
+            "longitude": "114.2500"
+        },
+        "telephone": "+86-15001191313"
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #B87333;
+            --primary-dark: #8B4513;
+            --secondary: #2C2C2C;
+            --bg-light: #FAF7F2;
+            --bg-dark: #1A1A1A;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --white: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+        
+        /* Navigation */
+        nav {
+            background: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 6rem 5%;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            opacity: 0.95;
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Sections */
+        section {
+            padding: 5rem 5%;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-title p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+        
+        /* About Section */
+        .about {
+            background: var(--white);
+        }
+        
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .about-text p {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+        
+        .certifications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .cert-badge {
+            background: var(--bg-light);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            color: var(--primary-dark);
+            border: 1px solid var(--primary);
+        }
+        
+        /* Products Section */
+        .products {
+            background: var(--bg-light);
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .product-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .product-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 3rem;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-info h3 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        /* Craftsmanship Section */
+        .craftsmanship {
+            background: var(--white);
+        }
+        
+        .process-timeline {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-light);
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .step-number {
+            background: var(--primary);
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .step-content h3 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .step-content p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background: var(--bg-light);
+        }
+        
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .faq-question {
+            padding: 1.25rem 1.5rem;
+            font-weight: 600;
+            color: var(--secondary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem 1.25rem;
+            color: var(--text-light);
+            display: none;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        
+        .contact .section-title h2 {
+            color: var(--white);
+        }
+        
+        .contact .section-title p {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .contact-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .contact-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-card p {
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .contact-card a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        .contact-form {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background: var(--primary-dark);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--bg-dark);
+            color: var(--white);
+            padding: 2rem 5%;
+            text-align: center;
+        }
+        
+        footer p {
+            opacity: 0.7;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-stats {
+                gap: 2rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Copper<span>Spark</span> Craft</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#craftsmanship">Craftsmanship</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Premium Copper Crafts & Bronze Artifacts</h1>
+        <p>Since 2010, we have been creating exquisite copper sculptures using traditional lost-wax casting techniques. From Buddhist statues to feng shui ornaments, we bring Chinese cultural heritage to life.</p>
+        
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number">12+</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">1200+</span>
+                <span class="stat-label">Products</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Corporate Clients</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">10W+</span>
+                <span class="stat-label">Global Fans</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>About CopperSpark Craft</h2>
+            <p>Where Tradition Meets Artistry</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Story</h3>
+                <p>Founded in 2010 in Shenzhen, CopperSpark Craft (Tongjin Years) is a professional manufacturer specializing in lost-wax copper casting. With over 12 years of expertise, we have served 50+ corporate clients and 20,000+ individual customers worldwide.</p>
+                
+                <h3>Our Mission</h3>
+                <p>"Let traditional culture live around you" - We blend ancient Chinese craftsmanship with modern design, creating copper artifacts that preserve cultural heritage while meeting contemporary aesthetic demands.</p>
+                
+                <h3>Certifications & Partnerships</h3>
+                <p>We are proud to be certified by leading institutions:</p>
+                <div class="certifications">
+                    <span class="cert-badge">CCTV Cultural Creative Supplier</span>
+                    <span class="cert-badge">China Foundry Association Member</span>
+                    <span class="cert-badge">China Arts & Crafts Association Member</span>
+                    <span class="cert-badge">Flying Flowers Award Gold Winner</span>
+                    <span class="cert-badge">Shanxi Museum Certified Supplier</span>
+                </div>
+            </div>
+            
+            <div class="about-stats">
+                <img src="https://via.placeholder.com/500x400/B87333/FFFFFF?text=CopperSpark+Craft" alt="CopperSpark Craft Factory" style="width:100%;border-radius:12px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="section-title">
+            <h2>Our Product Categories</h2>
+            <p>1200+ unique designs to meet every need</p>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">🏺</div>
+                <div class="product-info">
+                    <h3>Artist Collaborations</h3>
+                    <p>Exclusive designs from renowned artists including Monkey King series and Deer in the Forest series. Perfect for collectors and art enthusiasts.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">🐉</div>
+                <div class="product-info">
+                    <h3>Traditional Figurines</h3>
+                    <p>Gourd, Fukurokuju, Dragon Turtle, Three-legged Money Toad and more. Traditional Chinese symbols for blessing and prosperity.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">🦌</div>
+                <div class="product-info">
+                    <h3>Animal Sculptures</h3>
+                    <p>Dragon, Horse, Ox, Monkey, Deer, Bear, Eagle - exquisite zodiac and mythical creature designs crafted with precision.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">⚱️</div>
+                <div class="product-info">
+                    <h3>Feng Shui Collection</h3>
+                    <p>Elephant, Qilin, Pixiu, Guanyin, Zhong Kui and more. Traditional feng shui items for wealth, protection, and harmony.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">🎨</div>
+                <div class="product-info">
+                    <h3>Guochao (National Trend)</h3>
+                    <p>Modern Chinese style designs featuring Monkey King, Zen Monks, and playful childhood themes. Perfect for contemporary homes.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">🏛️</div>
+                <div class="product-info">
+                    <h3>Custom OEM/ODM</h3>
+                    <p>Bring your vision to life. We offer custom design, mold making, and production services for your unique copper artifacts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Section -->
+    <section class="craftsmanship" id="craftsmanship">
+        <div class="section-title">
+            <h2>Our Craftsmanship</h2>
+            <p>Traditional Lost-Wax Casting - 15 Steps to Perfection</p>
+        </div>
+        
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Design</h3>
+                    <p>Our in-house designers and collaborating artists create unique concepts, either independently or based on client requirements.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Sculpting</h3>
+                    <p>Master sculptors use clay to faithfully reproduce the artistic design, capturing every detail and nuance.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Mold Making</h3>
+                    <p>Advanced molding technology transforms the sculpture into precise rubber molds for wax pattern reproduction.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Wax Injection</h3>
+                    <p>Special wax is injected into molds with even distribution, creating accurate wax patterns.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>Wax Finishing</h3>
+                    <p>Skilled craftsmen meticulously refine each wax pattern to ensure flawless surfaces.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h3>Spruing & Dipping</h3>
+                    <p>Wax patterns are attached with sprues and dipped in ceramic slurry, building multiple layers of refractory material.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">7</div>
+                <div class="step-content">
+                    <h3>Drying</h3>
+                    <p>Ceramic shells air-dry naturally for 4-7 days to ensure complete curing and structural integrity.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">8</div>
+                <div class="step-content">
+                    <h3>Dewaxing</h3>
+                    <p>Heating in a specialized furnace melts out the wax, leaving a hollow ceramic shell ready for casting.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">9</div>
+                <div class="step-content">
+                    <h3>Pouring</h3>
+                    <p>Skilled craftsmen pour molten copper into the preheated ceramic shells at precise temperatures.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">10</div>
+                <div class="step-content">
+                    <h3>Knocking Out</h3>
+                    <p>After cooling, ceramic shells are carefully broken away to reveal the raw copper casting.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">11</div>
+                <div class="step-content">
+                    <h3>Grinding & Polishing</h3>
+                    <p>Precision grinding and polishing remove imperfections and create smooth, lustrous surfaces.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">12</div>
+                <div class="step-content">
+                    <h3>Color Finishing</h3>
+                    <p>Advanced high-temperature coloring techniques apply rich, lasting patinas to enhance each piece's beauty.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">13</div>
+                <div class="step-content">
+                    <h3>Quality Inspection</h3>
+                    <p>Every piece undergoes rigorous quality control before packaging and shipping.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">14</div>
+                <div class="step-content">
+                    <h3>Custom Packaging</h3>
+                    <p>Professional packaging with protective materials ensures safe delivery worldwide.</p>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">15</div>
+                <div class="step-content">
+                    <h3>Global Shipping</h3>
+                    <p>Safe and efficient shipping to customers worldwide via sea and air freight.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about working with us</p>
+        </div>
+        
+        <div class="faq-list">
+            <div class="faq-item active">
+                <div class="faq-question">What is your MOQ (Minimum Order Quantity)?</div>
+                <div class="faq-answer">Our standard MOQ is 50 pieces per design for wholesale orders. For custom/OEM orders, MOQ varies based on design complexity. We welcome small test orders to establish partnership.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What is your production lead time?</div>
+                <div class="faq-answer">Standard orders: 15-25 days after sample approval. Custom/OEM orders: 30-45 days depending on design complexity and order quantity. Rush orders available with additional fees.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do you accept custom designs?</div>
+                <div class="faq-answer">Absolutely! We specialize in OEM/ODM services. Send us your artwork, sketches, or references, and our design team will create custom molds and produce your unique products.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What are your payment terms?</div>
+                <div class="faq-answer">For new customers: 30% deposit, 70% balance before shipment. For established partners: T/T, L/C, or PayPal accepted. Sample orders: 100% prepayment.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do you offer samples?</div>
+                <div class="faq-answer">Yes! Sample cost + international shipping applies. Sample fees are refundable with bulk orders over 200 pieces per design.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do you ship internationally?</div>
+                <div class="faq-answer">Yes, we ship worldwide. We work with reliable freight forwarders for competitive sea and air freight rates. FOB Shenzhen/CIF destination available.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can you provide certificates of quality?</div>
+                <div class="faq-answer">Yes, we provide quality inspection certificates with each shipment. We also support third-party inspection (SGS, Bureau Veritas) upon request.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>Let's discuss your next copper crafts project</p>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-card">
+                <h3>📧 Email</h3>
+                <p><a href="mailto:woshizwl@126.com">woshizwl@126.com</a></p>
+            </div>
+            
+            <div class="contact-card">
+                <h3>📞 Phone</h3>
+                <p>+86 150 1113 9131</p>
+            </div>
+            
+            <div class="contact-card">
+                <h3>📍 Factory Address</h3>
+                <p>3e1, Building 2, Baiman Front Industrial Park<br>215 Basha Road, Longgang District<br>Shenzhen, Guangdong, China</p>
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <form action="mailto:woshizwl@126.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Inquiry *</label>
+                    <textarea id="message" name="message" placeholder="Please describe your requirements: product type, quantity, customization needs, etc." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CopperSpark Craft (Tongjin Years). All rights reserved.</p>
+        <p>Specialized in copper crafts manufacturing since 2010</p>
+    </footer>
+
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
